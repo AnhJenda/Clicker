@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clicker</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/angular.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2 class="display-4">Demo Clicking Counter</h2>
+        </div>
+        <div class="row">
+            <div class="col-3 order-1">
+                <h3>Shoe List</h3>
+                <ul id="shoe-list" class="list-group"></ul>
+            </div>
+            <div class="col-9 order-2">
+                <div id="shoe">
+                    <div class="row">
+                        <div class="shoe-info col-8">
+                            <div class="shoe-pic">
+                                <img id="shoe-img" width="400px" height="auto" alt="">
+                            </div>
+                            <div class="shoe-text">
+                                <h2 id="shoe-name"></h2>
+                                <h2 id="shoe-cost"></h2>
+                            </div>
+                        </div>
+
+                        <div class="shoe-counter col-4">
+                            Shoe Count:
+                            <span id="shoe-count"></span><br>
+                            Total:
+                            <span id="shoe-pay"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer ng-app="">
+            <h3>Thông tin liên hệ</h3>
+            <p>Click để liên hệ mua giày</p>
+            <input type="checkbox" ng-model="myVar">
+            <div ng-show="myVar">
+                <p>có bán đâu mà mua, tin người vcl hihi ^^</p>
+            </div>
+        </footer>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"
+    ></script>
+    <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+    ></script>
+    <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
