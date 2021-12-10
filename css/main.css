@@ -11,7 +11,7 @@ h2, h3{
     text-align: center;
 }
 
-#shoe-list, #shoe-list li {
+#shoe-list li {
     border: 0.2px solid whitesmoke;
     border-radius: 10px;
 }
